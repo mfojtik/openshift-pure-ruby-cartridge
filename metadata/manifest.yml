@@ -12,7 +12,6 @@ Cartridge-Vendor: mfojtik
 Categories:
   - service
   - ruby
-  - web_framework
 Website: http://www.ruby-lang.org
 Help-Topics:
   "Developer Center": https://www.openshift.com/developers

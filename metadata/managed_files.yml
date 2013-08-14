@@ -10,6 +10,5 @@ locked_files:
 - etc/conf.d/
 - etc/conf.d/*
 - env/
-- env/OPENSHIFT_RUBY_DIR
 processed_templates:
 - 'metadata/jenkins_shell_command.erb'

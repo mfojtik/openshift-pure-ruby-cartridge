@@ -10,11 +10,11 @@ source "${OPENSHIFT_PURERUBY_DIR}/lib/util"
 parse_args $@
 
 # Copy the version specific files to ruby directory
-shopt -s dotglob
-for dir in etc; do
-    mkdir -p $OPENSHIFT_PURERUBY_DIR/$dir
-    cp -Lr $OPENSHIFT_PURERUBY_DIR/versions/$version/$dir/* $OPENSHIFT_PURERUBY_DIR/$dir
-done
+#shopt -s dotglob
+#for dir in etc; do
+#    mkdir -p $OPENSHIFT_PURERUBY_DIR/$dir
+#    cp -Lr $OPENSHIFT_PURERUBY_DIR/versions/$version/$dir/* $OPENSHIFT_PURERUBY_DIR/$dir
+#done
 
  if [ $version == '1.9' ]; then
     # Cleanup from version 0.0.1

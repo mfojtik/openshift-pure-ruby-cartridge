@@ -8,12 +8,5 @@ case "$1" in
     version="$2"
 esac
 
-# Copy the version specific files to ruby directory
-shopt -s dotglob
-for dir in template; do
-    mkdir -p $OPENSHIFT_PURERUBY_DIR/$dir
-    cp -Lr $OPENSHIFT_PURERUBY_DIR/versions/$version/$dir/* $OPENSHIFT_PURERUBY_DIR/$dir 
-done
-
 echo "$version" > $OPENSHIFT_PURERUBY_DIR/env/OPENSHIFT_PURERUBY_VERSION
 update-configuration $version

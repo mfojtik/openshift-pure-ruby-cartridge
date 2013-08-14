@@ -67,3 +67,5 @@ Version-Overrides:
       - ruby-1.8
       - "ruby"
       - "ruby(version) = 1.8"
+
+Source-Url: git://github.com/mfojtik/openshift-pure-ruby-cartridge.git
